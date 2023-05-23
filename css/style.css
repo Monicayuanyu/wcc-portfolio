@@ -32,6 +32,16 @@ p{
     margin: 2.5em 0;
     font-family: Helvetica, sans-serif;
 }
+.poem {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 12px;
+  }
+  pre {
+    white-space: pre-wrap;
+    font-size: 12px;
+  }
 
 main,
 header{

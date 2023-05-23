@@ -19,86 +19,124 @@
         </nav>
         <header class="documentation-header">
             <section class="center-text">
-                <h1>Work Title</h1>
-                <h2>by Your Name</h6>
-                <p>Write a one-sentence summary of what the project is.</p> 
+                <h1>In the stillness of the forest</h1>
+                <h2>by YuanyuLi</h6>
+                <p>The project combines AI-generated narrative poems, images, and sound, driven by text input, to create an immersive experience of a virtual future nature that can be customized by the viewer.</p> 
             </section>
         </header>
 
         <main class="documentation-page">
             <section>
                 <div class="responsive-video centered-content">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/644036051?h=b260a3b1b0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    <iframe title="In the stillness of the forest" src="https://player.vimeo.com/video/822483566?h=e48769b4d0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
             </section>
             <section>
                 <h3>Introduction</h3>
-                <p>Write a short introduction, a short paragraph, giving a bit more detail about what the project is.</p>
+                <p>The project unfolds from AI-generated narrative poems, all exploring AI-generated pictures and sounds of virtual future nature. The AI's voice input constantly drives the generation of new image data. Visitors can enter text to generate new images to their liking, making the experience more personal and engaging and challenging viewers' perceptions of nature, art, and technology.
+
+                    Use a combination of visual and auditory feedback to create a multi-sensory experience. Use projection mapping to create a virtual environment surrounding the viewer while using generated soundscapes to make sense of presence and immersion.</p>
             </section>
             <section>
                 <h3>Concept and Background Research</h3>
                 
-                <p>Write about the concept behind the project, in other words the creative or theoretical inspiration. Include details about any background research you may have done (don’t forget to include references in the reference section).</p>
-                <p>Consider writing about your work in relation to a creative, theoretical or computational tradition that you may be taking inspiration from, in other words think about how your work is situated in a particular making tradition. </p>
+                <p>This project aims to create an immersive and thought-provoking exhibition experience. Combining the power of AI-generated poetry, images, and sound can push the boundaries of technology and art. The poem "In the stillness of the forest " depicts the serene sounds and melodies of the deep forest, immersing the reader in a world of natural beauty. Using narrative poetry and generated imagery can help create a sense of otherworldliness and mystery while adding voice input and interactive elements can help make the experience more personal and engaging. The exhibition aims to be personalized and engaging, allowing visitors to co-create with artificial intelligence.</p>
+                <pre>
+                    In the stillness of the forest deep,
+                    Nature's symphony begins to sweep.
+                    Softly rustling leaves and gentle breeze,
+                    Whisper secrets to the swaying trees.
+                    
+                    A babbling brook, its melody sweet,
+                    Pitter-patter of tiny feet.
+                    Frogs croak, birds chirp, and crickets sing,
+                    Creating a harmonious ring.
+                    
+                    The rustling of branches, a gentle hush,
+                    Nature's orchestra, no need to rush.
+                    Insects buzz and bees hum,
+                    A peaceful rhythm, a soothing hum.
+                    
+                    The waves crash against the shore,
+                    A thunderous sound we can't ignore.
+                    The roar of the waterfall so grand,
+                    A forceful sound we can't withstand.
+                    
+                    Nature's music is ever-present,
+                    A symphony that's never hesitant.
+                    In every sound, we find a trace,
+                    Of the beauty of nature's embrace.
+
+                    In the stillness of the forest deep,
+                    Nature's symphony begins to sweep.
+                    Softly rustling leaves and gentle breeze,
+                    Whisper secrets to the swaying trees.
+                    
+                    A babbling brook, its melody sweet,
+                    Pitter-patter of tiny feet.
+                    Frogs croak, birds chirp, and crickets sing,
+                    Creating a harmonious ring.
+                    
+                    The rustling of branches, a gentle hush,
+                    Nature's orchestra, no need to rush.
+                    Insects buzz and bees hum,
+                    A peaceful rhythm, a soothing hum.
+                    
+                    The waves crash against the shore,
+                    A thunderous sound we can't ignore.
+                    The roar of the waterfall so grand,
+                    A forceful sound we can't withstand.
+                    
+                    Nature's music is ever-present,
+                    A symphony that's never hesitant.
+                    In every sound, we find a trace,
+                    Of the beauty of nature's embrace.
+                  </pre>
                 
-                <!-- if you have a full width image try make it not too tall -->
-                <img src="../assets/images/repeating-diagonal-lines-strip.jpeg"/>
+                    <p>To achieve this, we focused on using projection mapping to create a virtual environment surrounding the viewer. This virtual world is filled with AI-generated images and sounds, creating a sense of presence and immersion. Visitors can enter text prompts to generate new images of their choice, making the experience even more personal.
+
+                        We also explored the relationship between the viewer and the AI-generated content. By allowing visitors to enter their preferred style of the generated image, we create a sense of collaboration between the viewer and the AI. This blurs the lines between human and machine creativity and challenges our perceptions of what is possible.
+                        
+                        Ultimately, the exhibition aims to transport viewers into a future world where AI-generated nature is the norm. This creates a sense of transcendence and mystery that challenges our assumptions about the natural world.</p>
+                    <p>We also explored the relationship between the viewer and the AI-generated content. By allowing visitors to enter their preferred style of the generated image, we create a sense of collaboration between the viewer and the AI. This blurs the lines between human and machine creativity and challenges our perceptions of what is possible.</p>
+                    <p>Ultimately, the exhibition aims to transport viewers into a future world where AI-generated nature is the norm. This creates a sense of transcendence and mystery that challenges our assumptions about the natural world.</p>
                 
             </section>
             <section>
                 <h3>Technical Implementation</h3>
 
+                <p>To create this exhibition, we used Stable Diffusion, a text-to-image deep learning model that generates highly detailed images based on the user's text cues.  I used Touchdesigner to create a component that sends requests to the Stable Diffusion API and delivers the generated images. As different values of seed can produce images with other differences, using this and adding stylized noise, Stablediffusion can generate a continuous stream of photos, plus a slow in and out to form a new video. To match the projection, the pixels are set at 1280*720.</p>
+                <img src="https://raw.githubusercontent.com/Monicayuanyu/wcc-portfolio/main/assets/images/1.jpg" alt="Flowers">
+               
                 <!-- example of styling for three images, you can write your own styling -->
                 <div class="flex-container flex-basis-third">
                     <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                        <img src="https://raw.githubusercontent.com/Monicayuanyu/wcc-portfolio/main/assets/images/2.jpg" alt="Flowers">
                     </div>
                     <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                        <img src="https://raw.githubusercontent.com/Monicayuanyu/wcc-portfolio/main/assets/images/3.jpg" alt="Flowers">
                     </div>
                     <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                        <img src="https://raw.githubusercontent.com/Monicayuanyu/wcc-portfolio/main/assets/images/4.jpg" alt="Flowers">
                     </div>
                 </div>
                 
-                <p>Write about the process of implementing your project. What technical elements or hardware are involved in your system. Write about why you made certain technical or design decisions etc. </p>
+                <p> I also experimented with visual and auditory effects in TouchDesigner, exploring the impact of particle count and size on the visual experience. This allowed us to create a more immersive and engaging exhibition experience. </p>
             
-                <!-- example of styling for three images, you can write your own styling -->
-                <div class="flex-container flex-basis-half">
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                </div>
-
-                <!-- default flex item is for 4 & follows media query styling for home page -->
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                    <div class="flex-item">
-                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
-                    </div>
-                </div>
+                <img src="https://raw.githubusercontent.com/Monicayuanyu/wcc-portfolio/main/assets/images/5.jpg" alt="Flowers">
          
+                <p>AI girls read aloud in the music section, combining naturalistic styles with electronic mystery. With Touchdesigner's audio analysis, the speed of the image changes matches the speed of the human voice. A microphone device is also available, allowing the viewer's voice to drive the creation of natural images.</p>
             </section>
             <section>
                 <h3>Reflection and Future Development</h3>
-                <p>Reflect on how the project went, what went well, what you learnt etc. Based on these reflections, conclude with how you would further develop this project if you were to make another version or how you would further develop your ideas.</p>
+                <p>During the production process, the project initially included ChatGpt 3.5, which would allow users to generate different natural narrative poems directly from ChatGpt by accessing ChatGpt's API and using microphone voice input to enhance the interactivity of the exhibition. However, in the actual user experience survey, the processing was too slow, and audience feedback indicated that there was too much interactable content, which brought confusion. Thus, this feature was removed.</p>
+                <p>In future developments, the project aims to connect with VR technology, which can also provide visual and auditory feedback, creating a multi-sensory experience for the audience. This could enhance the project's immersive qualities, making it more interactive and engaging for viewers.</p>
             </section>
             <section>
                 <h3>References</h3>
                 <ul>
-                    <li>Technical Reference example. Include link where possible.</li>
-                    <li>Conceptual Reference example. Include link where possible.</li>
+                    <li>Stable Diffusion. (n.d.). Derivative. https://derivative.ca/tags/stable-diffusion</li>
+                    <li>Lexica. (n.d.). Lexica. https://lexica.art/</li>
                 </ul>
             </section>
         </main>
